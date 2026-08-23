@@ -565,11 +565,6 @@
                 console.error('Asset URL is empty for title:', title, 'Cannot load.');
                 return;
             }
-            // Adblocker Check
-            if (BLOCKED_DOMAINS.some(d => url.includes(d))) {
-                console.warn(`Blocked restricted URL for asset: ${title}`);
-                return;
-            }
             const isFixedSize = false;
             let targetWidth = '100%';
             let targetHeight = '100%';
